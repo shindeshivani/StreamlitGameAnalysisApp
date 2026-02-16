@@ -2,9 +2,14 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 from plotly.subplots import make_subplots
+from pathlib import Path
+
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_PATH = BASE_DIR / "data" / "VideoGamesSales.csv"
 
 # Load the dataset
-df=pd.read_csv('../data/VideoGamesSales.csv')
+df = pd.read_csv(DATA_PATH)
 st.set_page_config(page_title="Video Games Sales Analysis",page_icon=":bar_chart:",layout="wide")
 
 st.markdown("""
