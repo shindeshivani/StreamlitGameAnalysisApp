@@ -4,7 +4,7 @@ import pandas as pd
 from plotly.subplots import make_subplots
 
 # Load the dataset
-df=pd.read_csv('D:/Project26/VideoGamesProject-main/data/VideoGamesSales.csv')
+df=pd.read_csv('..data/VideoGamesSales.csv')
 st.set_page_config(page_title="Video Games Sales Analysis",page_icon=":bar_chart:",layout="wide")
 
 st.markdown("""
